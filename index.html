@@ -2,33 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>IFE JavaScript Task 01</title>
+    <title>谭顼坤</title>
+    <link rel="stylesheet" href="web/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="web/css/main.css" />
   </head>
 <body>
+  <div class="container-fluid">
+    <header>
+      <div class="info">
+        <img class="avatar" src="web/img/avatar.jpg" />
+        <h4 class="name">谭顼坤 Tan Xukun</h4>
+      </div>
+    </header>
+    <div class="banner">
 
-  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
-  <button id="button">确认填写</button>
+    </div>
 
-  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+  </div>
 
-<script type="text/javascript">
 
-(function() {
-  /*    
-  在注释下方写下代码
-  给按钮button绑定一个点击事件
-  在事件处理函数中
-  获取aqi-input输入的值，并显示在aqi-display中
-  */
- var btn = document.getElementById('button');
- var aqi_input = document.getElementById('aqi-input');
- var aqi_span = document.getElementById('aqi-display');
- btn.onclick = function(){
- 	aqi_span.innerHTML = aqi_input.value;
- }
 
-})();
 
-</script>
+
+  <script src="web/js/main.js"></script>
+  <script src="web/bower_components/jquery/dist/jquery.min.js"></script>
 </body>
 </html>
