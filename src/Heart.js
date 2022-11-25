@@ -1,6 +1,6 @@
 const settings = {
     particles: {
-        length: 5000,
+        length: 500,
         duration: 2,
         velocity: 100,
         effect: -0.75,

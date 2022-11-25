@@ -94,7 +94,7 @@ class MeteorShower {
     }
 
     update(delta) {
-        if (!this.stop && this.stars.length < 100) {
+        if (!this.stop && this.stars.length < 30) {
             this.stars.push(this.createStar());
         }
         this.stars.forEach((star)=>{
