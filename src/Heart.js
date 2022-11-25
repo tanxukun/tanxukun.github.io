@@ -48,7 +48,7 @@ class Heart {
             deltaTime = newTime - (this.time || newTime);
         this.time = newTime;
 
-        // this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
         var amount = this.particleRate * deltaTime;
         for (let i = 0; i < amount; i++) {

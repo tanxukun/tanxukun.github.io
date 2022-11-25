@@ -1,8 +1,12 @@
-let canvas = document.querySelector('canvas');
-let context = canvas.getContext('2d');
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
 canvas.width = window.document.body.clientWidth;
 canvas.height = window.document.body.clientHeight;
 
+const canvas2 = document.getElementById('canvas2');
+const context2 = canvas2.getContext('2d');
+canvas2.width = window.document.body.clientWidth;
+canvas2.height = window.document.body.clientHeight;
 
 
 const textShow = new TextShow(canvas, context);
@@ -14,7 +18,7 @@ textShow.onEnd = () => {
     let meteorShower = new MeteorShower(canvas, context);
     meteorShower.start();
     setTimeout(() => {
-        const heart = new Heart(canvas, context);
+        const heart = new Heart(canvas2, context2);
         heart.render();
     }, 3000)
 }
