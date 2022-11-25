@@ -113,7 +113,7 @@ class TextShow {
     }
 
     async run () {
-        const text = ['祝福', '海苔妈妈', '生日快乐', '越来越美腻', '哈哈哈哈', '接下来', '请欣赏', '送海苔妈妈的', '流星雨'];
+        const text = ['☺', '祝：', '海苔妈妈', '生日快乐', '越来越美腻', '哈哈哈哈', '接下来', '请欣赏', '海苔妈妈专属', '流星雨'];
         for(let i = 0;i < text.length; i++) {
             await this.awaitSendText(text[i])
         }
