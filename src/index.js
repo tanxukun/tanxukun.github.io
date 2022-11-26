@@ -20,6 +20,9 @@ textShow.onEnd = () => {
     setTimeout(() => {
         const heart = new Heart(canvas2, context2);
         heart.render();
+        setTimeout(() => {
+            canvas2.style.display = 'none';
+        }, 10000)
     }, 3000)
 }
 
